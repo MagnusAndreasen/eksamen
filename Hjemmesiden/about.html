@@ -1,10 +1,170 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cocktail Guide</title>
+	
+	
+<!-- Bootstrap CSS -->	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<!-- Bootstrap CSS END -->	
+
+<link rel="stylesheet" href="styles.css" type="text/css">	
+<!-- back up font <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"> back up font END -->
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
 </head>
 
 <body>
+	<!-- navigation -->
+	<div class="container">
+		<nav class="navbar flex-column flex-sm-row">
+			<a class="navbar-brand" href="index.html">
+			   	<img src="images/logo.final.png" width="100" height="40" alt="">
+			</a>
+			<ul class="nav justify-content-end flex-column flex-sm-row">
+			  	<li class="nav-item">
+			   		<a class="nav-link" href="index.html">Home</a>
+			  	</li>
+			  	<li class="nav-item">
+			   		<a class="nav-link" href="cocktails.html">Cocktails</a>
+			  	</li>
+			  	<li class="nav-item">
+			   		<a class="nav-link" href="tipsntricks.html">Tips & Tricks</a>
+			  	</li>
+			  	<li class="nav-item">
+			   		<a class="nav-link active" href="about.html">About</a>
+			  	</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- navigation end -->
+	<!-- header -->
+	<header>
+		<div class="container-fluid">
+			<img src="images/logo.final.png" class="img-fluid cocktails-header-logo" alt="Responsive image">
+		</div>
+	</header>
+	<!-- header end -->
+		<!-- content -->
+		<h2>
+			About Us
+		</h2>
+		<div class="top1 container justify-content-sm-center">
+			<!-- content top -->
+			<div class="row cocktails-page-about">
+				<div class="col-sm-6">
+					<p class="col-sm about">
+						Lorem ipsum dolor sit amet, tellus diam viverra ornare suscipit curabitur sapien. Faucibus nec suscipit non, odio donec duis egestas enim potenti, libero perferendis libero, eros eu amet, elit enim. Sed dolor egestas quis mollis, phasellus quisque dictum sed auctor sagittis, vel imperdiet vel eros venenatis. Nam ultricies. Metus in et, ultricies at metus feugiat. Etiam turpis feugiat a sed risus, metus vehicula aliquet platea dignissim, nulla nihil, congue sit at quam suscipit.<br><br>
+					</p>
+    			</div>
+				<div class="col-sm-6">
+					<p class="col-sm about">
+						Lorem ipsum dolor sit amet, tellus diam viverra ornare suscipit curabitur sapien. Faucibus nec suscipit non, odio donec duis egestas enim potenti, libero perferendis libero, eros eu amet, elit enim. Sed dolor egestas quis mollis, phasellus quisque dictum sed auctor sagittis, vel imperdiet vel eros venenatis. Nam ultricies. Metus in et, ultricies at metus feugiat. Etiam turpis feugiat a sed risus, metus vehicula aliquet platea dignissim, nulla nihil, congue sit at quam suscipit.<br><br>
+					</p>
+    			</div>
+			</div>
+			<!-- content top END -->
+			
+			<!-- content bottom -->
+			<div class="container">
+            	<div class="row">
+                	<div class="col-sm-12">
+                    	<h2>Contact Us</h2>
+                    	<p class="col-sm about">Send us a message via the form below.</p>
+                    	<form id="contact-form" method="post" action="contact.php" role="form">
+							<div class="messages"></div>
+    						<div class="controls">
+        						<div class="row">
+            						<div class="col-sm-6">
+            						    <div class="form-group">
+            						        <label for="form_name">First name *</label>
+            						        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
+            						        <div class="help-block with-errors"></div>
+            						    </div>
+            						</div>
+            						<div class="col-sm-6">
+            						    <div class="form-group">
+            						        <label for="form_lastname">Last name *</label>
+            						        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
+            						        <div class="help-block with-errors"></div>
+            						    </div>
+            						</div>
+        						</div>
+        						<div class="row">
+        						    <div class="col-sm-6">
+        						        <div class="form-group">
+        						            <label for="form_email">Email *</label>
+        						            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+        						            <div class="help-block with-errors"></div>
+        						        </div>
+        						    </div>
+        						    <div class="col-sm-6">
+        						        <div class="form-group">
+        						            <label for="form_phone">Phone</label>
+        						            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+        						            <div class="help-block with-errors"></div>
+        						        </div>
+        						    </div>
+        						</div>
+        						<div class="row">
+        						    <div class="col-sm-12">
+        						        <div class="form-group">
+        						            <label for="form_message">Message *</label>
+        						            <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+        						            <div class="help-block with-errors"></div>
+        						        </div>
+        						    </div>
+									<div class="col-sm-12">
+                						<input type="submit" class="btn btn-success btn-send" value="Send message">
+            						</div>
+        						</div>
+        						<div class="row">
+            						<div class="col-md-12">
+                						<p class="text-muted"><strong>*</strong> These fields are required.</p>
+            						</div>
+        						</div>
+    						</div>
+						</form>
+					</div>
+            	</div>
+        	</div>
+			<!-- content bottom END -->
+		</div>
+		<!-- content END -->
+	
+	<!-- to top button -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<!-- to top button end -->
+	
+	<!-- footer -->
+	<footer>
+  		<div class="container">
+			<div class="row justify-content-sm-center">
+    			<div class="col-sm-auto">
+    				<p class="footer">Cocktail Guide - Copyright © 2018 - Website developed by SMS</p>
+    			</div>
+  			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	
+	<!-- scripts -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS END -->
+	
+	<script src="validator.js"></script>
+    <script src="contact.js"></script>
+	
+	<!-- custom scripts -->
+	<script src="scripts.js"></script>
+	<!-- custom scripts end -->
+	
+	<!-- scripts end -->
+	
 </body>
 </html>
