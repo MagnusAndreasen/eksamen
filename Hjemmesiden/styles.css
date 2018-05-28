@@ -6,6 +6,11 @@
 	src: url(font/Aloha_FULL/Font_formats/TTF/Aloha.ttf);
 }
 
+@font-face {
+	font-family: "Raleway";
+	src: url(font/Raleway/Raleway-Regular.ttf);
+}
+
 
 body {
 	font-family: "Aloha", 'Architects Daughter', cursive;
@@ -15,12 +20,15 @@ body {
 
 p {
     color: #1E1E1E; /* Text color */
-	
+	font-family: "Raleway", "sans serif";
 }
 
 .background {
 	background-color: #f1edd4;
-	
+	border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+	border-radius: 0px; /* Rounded corners */
+	height: inherit;
 }
 
 
@@ -123,6 +131,8 @@ h5 {
 .h5drinks {
 	text-align: center;
 	color: #E7491C;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .interactive {
@@ -152,6 +162,7 @@ h5 {
 	text-align: center;
 	font-size: 20px;
 	color: #E7491C;
+	font-family: "Aloha";
 }
 
 .top1 {
@@ -165,7 +176,7 @@ h5 {
 }
 
 .h4tips {
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
@@ -176,6 +187,10 @@ h5 {
 }
 
 .about {
+	text-align: left;
+}
+
+.about-contact {
 	text-align: center;
 }
 
@@ -213,8 +228,13 @@ label {
 	border-radius: 0px;
 }
 
+#form_name, #form_lastname, #form_email, #form_phone, #form_message {
+	font-family: "Raleway"; 
+}
+
 .text-muted {
-	color: #1E1E1E !important;
+	color: #1E1E1E;
+	font-family: "Raleway";
 }
 
 .toprow-cocktail {
@@ -255,7 +275,7 @@ label {
 
 /* footer */
 .footer {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "Raleway", sans-serif;
 	color: #E7491C;
 }
 
