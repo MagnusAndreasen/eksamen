@@ -75,7 +75,7 @@ header {
 	color: white;
 	position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 500px; 
 }
 
 .header-content {
@@ -276,7 +276,8 @@ label {
 /* footer */
 .footer {
 	font-family: "Raleway", sans-serif;
-	color: #E7491C;
+	color: white;
+	background-color: #E7491C;
 }
 
 /* responsive */

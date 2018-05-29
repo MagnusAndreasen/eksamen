@@ -10,12 +10,15 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <!-- Bootstrap CSS END -->	
 
-<link rel="stylesheet" href="styles.css" type="text/css">	
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="stylesex.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+	
+
 	
 </head>
 
-<body>
+<body onload="init();">
 	<!-- navigation -->
 	<div class="container">
 		<nav class="navbar flex-column flex-sm-row">
@@ -91,14 +94,34 @@
 				<div class="row cocktails-page justify-content-center"> 
 					<div class="col-sm-12">
 						<h4 class="col-sm h4tips">Lærte du opskriften på Sex On The Beach?</h4>
-						<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br> Prøv og se om du kan lave den perfekte Mojito, ved at trække ingredienserne over i glasset.</p>
+						<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br> Prøv og se om du kan lave den perfekte Sex On The Beach, ved at trække ingredienserne over i glasset.</p><br><br>
+						<p class="interactive">Ved at prøve noget i praksis, husker man det tit meget bedre. Prøv!</p>
     				</div>
 				</div>
-				<div class="row justify-content-center"> 
-					<div class="col-sm-4">
-						<img src="http://fillmurray.com/300/300" alt="..." class="img-thumbnail phototips dragndrop">
-						<p class="interactive">Ved at prøve noget i praksis, husker man det tit meget bedre.</p>
+				<div class="row justify-content-center">
+					<!-- Alt indhold er wrappet ind i en div med id="content". Alle draggable enheder kan kun trækkes rundt inden for dette felt -->
+					<div id="content">
+					
+							<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
+						<div id="glas"><img id="stepByStep" src="images/glas3.png" width="175" height="301" alt=""/></div>
+				
+								<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
+	  					<div id="ingredienser">
+					
+								<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
+							<div id="centerwrapper">
+							
+								<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
+								<div id="traneb"><img src="images/tranebær.png" width="76" height="auto" alt=""/></div>
+								<div id="fersken"><img src="images/fersken.png" width="76" height="auto" alt=""/></div>
+								<div id="is"><img src="images/icecubes@900x.png" width="100" height="auto" alt=""/></div>				
+								<div id="appelsin"><img src="images/appelsinjuice.png" width="76" height="auto" alt=""/></div>		  		
+								<div id="vodka"><img src="images/vodka.png" width="76" height="271" alt=""/></div>
+							</div>
+						</div>
 					</div>
+					
+					
 				</div>
 			<!-- content interactive row END -->
 		</div>
@@ -126,6 +149,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS END -->
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scriptsex.js"></script>
 	
 	<script src="validator.js"></script>
     <script src="contact.js"></script>

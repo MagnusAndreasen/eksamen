@@ -42,19 +42,19 @@ function billedeSkift(event, ui) {
 	if(checkRecipe(glass, recipe)) {
 		if (draggedIngredient == 'is') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasis.png";
+			document.getElementById("stepByStep").src = "images/glasis.png";
 		} else if(draggedIngredient == 'vodka') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glaseftervodka.png";
+			document.getElementById("stepByStep").src = "images/glaseftervodka.png";
 		} else if(draggedIngredient == 'fersken') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasefterfersken.png";
+			document.getElementById("stepByStep").src = "images/glasefterfersken.png";
 		} else if(draggedIngredient == 'appelsin') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasefterjuice.png";
+			document.getElementById("stepByStep").src = "images/glasefterjuice.png";
 		} else if(draggedIngredient == 'traneb') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasdone.png";
+			document.getElementById("stepByStep").src = "images/glasdone.png";
 		}
 	//Hvis ikke den har det korrekte id vil den blive trukket fra glasset og ryge tilbage på sin plads
 	} else if(glass.length > 0) {

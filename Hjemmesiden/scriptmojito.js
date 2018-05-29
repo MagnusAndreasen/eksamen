@@ -43,25 +43,25 @@ function billedeSkift(event, ui) {
 	if(checkRecipe(glass, recipe)) {
 		if (draggedIngredient == 'sukker') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glassukker.png";
+			document.getElementById("stepByStep").src = "images/glassukker.png";
 		} else if(draggedIngredient == 'mynte') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glassukkermint1.png";
+			document.getElementById("stepByStep").src = "images/glassukkermint1.png";
 		} else if(draggedIngredient == 'lime') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glassukkermintlime.png";
+			document.getElementById("stepByStep").src = "images/glassukkermintlime.png";
 		} else if(draggedIngredient == 'morter') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glaseftermorter.png";
+			document.getElementById("stepByStep").src = "images/glaseftermorter.png";
 		} else if(draggedIngredient == 'is') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glassefteris.png";
+			document.getElementById("stepByStep").src = "images/glassefteris.png";
 		} else if(draggedIngredient == 'rom') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasefterrom.png";
+			document.getElementById("stepByStep").src = "images/glasefterrom.png";
 		} else if(draggedIngredient == 'danskvand') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasefterdanskvand.png";
+			document.getElementById("stepByStep").src = "images/glasefterdanskvand.png";
 		}
 	//Hvis ikke den har det korrekte id vil den blive trukket fra glasset og ryge tilbage på sin plads
 	} else if(glass.length > 0) {
