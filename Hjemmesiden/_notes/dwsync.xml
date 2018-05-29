@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="about.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720209380000000" remote="131720165400000000" Dst="2" />
-<file name="contact.php" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720196790000000" remote="131720165400000000" Dst="2" />
-<file name="cocktails.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720203210000000" remote="131720165400000000" Dst="2" />
-<file name="index.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720206450000000" remote="131720165400000000" Dst="2" />
-<file name="mojito.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720227980000000" remote="131720165400000000" Dst="2" />
-<file name="sexonthebeach.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720201300000000" remote="131720165400000000" Dst="2" />
-<file name="scripts.js" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720192800000000" remote="131720165400000000" Dst="2" />
-<file name="styles.css" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720227040000000" remote="131720165400000000" Dst="2" />
-<file name="tipsntricks.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720208270000000" remote="131720165400000000" Dst="2" />
+<file name="about.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720209380000000" remote="131720874000000000" Dst="2" />
+<file name="contact.php" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720196790000000" remote="131720874000000000" Dst="2" />
+<file name="cocktails.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720657462813358" remote="131720874000000000" Dst="2" />
+<file name="index.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720697579879868" remote="131720874000000000" Dst="2" />
+<file name="mojito.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720679077844489" remote="131720874000000000" Dst="2" />
+<file name="sexonthebeach.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720675473400180" remote="131720874000000000" Dst="2" />
+<file name="scripts.js" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720192800000000" remote="131720874000000000" Dst="2" />
+<file name="styles.css" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720681089304779" remote="131720874000000000" Dst="2" />
+<file name="tipsntricks.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720656670953702" remote="131720874000000000" Dst="2" />
 <file name="about.html" server="ftp.magnusmultimedia.dk//eksamen2018/Hjemmesiden/" local="131717685177397945" remote="131718084600000000" Dst="2" />
 <file name="cocktails.html" server="ftp.magnusmultimedia.dk//eksamen2018/Hjemmesiden/" local="131718115221579324" remote="131718084600000000" Dst="2" />
 <file name="contact.php" server="ftp.magnusmultimedia.dk//eksamen2018/Hjemmesiden/" local="131717651665169310" remote="131718084600000000" Dst="2" />
@@ -18,5 +18,15 @@
 <file name="sexonthebeach.html" server="ftp.magnusmultimedia.dk//eksamen2018/Hjemmesiden/" local="131718152313088017" remote="131718084600000000" Dst="2" />
 <file name="styles.css" server="ftp.magnusmultimedia.dk//eksamen2018/Hjemmesiden/" local="131718149054750908" remote="131718084600000000" Dst="2" />
 <file name="tipsntricks.html" server="ftp.magnusmultimedia.dk//eksamen2018/Hjemmesiden/" local="131717688488198638" remote="131718084600000000" Dst="2" />
-<file name="thankyou.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720227040000000" remote="131720165400000000" Dst="2" />
+<file name="thankyou.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720227040000000" remote="131720874000000000" Dst="2" />
+<file name="interaktiv-mojito.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720597519610167" remote="131720874000000000" Dst="2" />
+<file name="mojito.js" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720547363319694" remote="131720874000000000" Dst="2" />
+<file name="mojitogif.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720597519630055" remote="131720874000000000" Dst="2" />
+<file name="mojitogif.js" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720597519640057" remote="131720874000000000" Dst="2" />
+<file name="scriptmojito.js" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720676812431716" remote="131720874000000000" Dst="2" />
+<file name="scriptsex.js" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720667036091236" remote="131720874000000000" Dst="2" />
+<file name="sexonthebeach.js" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720557442577974" remote="131720874000000000" Dst="2" />
+<file name="sexonthebeachgif.html" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720557442587855" remote="131720874000000000" Dst="2" />
+<file name="stylemojito.css" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720597519660044" remote="131720874000000000" Dst="2" />
+<file name="stylesex.css" server="ftp.magnusmultimedia.dk//eksamen2018/" local="131720597519670041" remote="131720874000000000" Dst="2" />
 </dwsync>
