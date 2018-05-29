@@ -1,0 +1,39 @@
+/* Selve området hele funktionen befinder sig inden for.*/
+#content {
+	margin: auto;
+	width: 1000px;
+	height: auto;
+	border: 1px solid #e7491c;
+}
+
+/* Containeren for hvor elementer bliver droppet med processbilleder af glasset*/
+#glas {
+	width: 175px;
+	height: 301px;
+	margin: 50px auto;
+}
+
+/* Containeren for det felt ingredienserne befinder sig i inden og efter de er blevet dragget */
+#ingredienser {
+	width: 100%;
+	height: 400px;
+	margin: auto;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+
+/* En contentwrapper der er pakket uden om ingredienserne for at få dem til at være i midten af containeren*/
+#centerwrapper {
+	margin: auto;
+	width: 100%;
+	/*border: 1px solid blue;*/
+}
+
+/* De draggable elementer der indeholder billeder af den pågældende ingrediens */
+#centerwrapper div {
+	width: auto;
+	height: auto;
+	margin: 10px;
+	display: inline;
+	/*border: 1px solid blue;*/
+}
