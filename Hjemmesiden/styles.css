@@ -161,7 +161,7 @@ h5 {
 }
 
 .godebartenderimg {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .drinks {
@@ -228,7 +228,7 @@ label {
 }
 
 .btn:hover {
-	background-color: #E7491C;
+	background-color: #1E1E1E;
 	color: white;
 	border: none;
 	border-radius: 0px;
@@ -272,7 +272,7 @@ label {
 }
 
 #myBtn:hover {
-    background-color: #E7491C; /* Add a dark-grey background on hover */
+    background-color: #1E1E1E; /* Add a dark-grey background on hover */
 }
 
 
@@ -280,10 +280,16 @@ label {
 
 
 /* footer */
+footer {
+	background: #E7491C;
+	width: 100%;
+	align-content: center;
+}
+
 .footer {
 	font-family: "Raleway", sans-serif;
 	color: white;
-	background-color: #E7491C;
+	margin-top: 15px;
 }
 
 /* responsive */
