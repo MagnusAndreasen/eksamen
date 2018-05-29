@@ -32,8 +32,6 @@ p {
 }
 
 
-
-
 /* navigation */
 
 .nav-item {
@@ -103,7 +101,10 @@ header {
 
 .cocktails-header {
 	height: 400px; 
-	margin: auto; 
+	margin-left: none;
+	margin-right: none;
+	padding: none;
+	
 	display: block;
 }
 
@@ -156,6 +157,11 @@ h5 {
 
 .img-thumbnail {
 	border: none;
+	height: auto;
+}
+
+.godebartenderimg {
+	margin-bottom: 20px;
 }
 
 .drinks {
