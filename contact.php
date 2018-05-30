@@ -61,15 +61,12 @@ catch (\Exception $e)
 }
 
 
-// if requested by AJAX request return JSON response
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
+if ($responseArray['type'] == 'success') {
+    // success redirect
 
-    header('Content-Type: application/json');
-
-    echo $encoded;
+    header('Location: http://www.magnusmultimedia.dk/eksamen2018/thankyou.html');
 }
-// else just display the message
 else {
-    echo $responseArray['message'];
+    //error redirect
+    header('Location: http://www.magnusmultimedia.dk/eksamen2018/error.html');
 }

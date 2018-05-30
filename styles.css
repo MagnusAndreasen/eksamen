@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+/* Fonte der bliver brugt */
 @font-face {
 	font-family: "Aloha";
 	src: url(font/Aloha_FULL/Font_formats/OTF/Aloha.otf);
@@ -10,12 +11,11 @@
 	font-family: "Raleway";
 	src: url(font/Raleway/Raleway-Regular.ttf);
 }
+/* Fonte der bliver brugt END */
 
-
+/* Main */
 body {
 	font-family: "Aloha", 'Architects Daughter', cursive;
-	
-	
 }
 
 p {
@@ -30,14 +30,11 @@ p {
 	border-radius: 0px; /* Rounded corners */
 	height: inherit;
 }
-
+/* Main END */
 
 /* navigation */
-
 .nav-item {
-	
 	background-color: none;
-	
 }
 
 .nav-link {
@@ -52,13 +49,11 @@ p {
 .active {
 	color: #1E1E1E;
 }
-
+/* navigation END */
 
 /* header */
-
 header {
-	margin-bottom: 50px;
-	
+	margin-bottom: 50px;	
 }
 
 .jumbotron {
@@ -113,6 +108,7 @@ header {
 	margin: auto; 
 	display: block;
 }
+/* header END */
 
 /* content top */
 h2 {
@@ -203,12 +199,6 @@ h5 {
 	margin-bottom: 30px;
 }
 
-.videotips { /* videos in tips & tricks page */
-	width: "640px"; 
-	height: "480px";
-	
-}
-
 .about {
 	text-align: left;
 }
@@ -216,7 +206,7 @@ h5 {
 .about-contact {
 	text-align: center;
 }
-
+/* content top END */
 
 /* content bottom */
 .bottom {
@@ -270,6 +260,7 @@ label {
 .dragndrop {
 	align-content: center;
 }
+/* content bottom END */
 
 /* to top button */
 #myBtn {
@@ -291,10 +282,7 @@ label {
 #myBtn:hover {
     background-color: #1E1E1E; /* Add a dark-grey background on hover */
 }
-
-
-
-
+/* to top button END */
 
 /* footer */
 footer {
@@ -308,13 +296,14 @@ footer {
 	color: white;
 	margin-top: 15px;
 }
+/* footer END */
 
 /* responsive */
-/* On small screens, remove header */
-@media (max-width: 767px) {
+
+@media (max-width: 767px) { /* On small screens, remove header */
 	header {
         display: none;
-    }
+    } 
 	
 	.drink {
 		text-align: center;
@@ -324,4 +313,4 @@ footer {
 		text-align: center;
 	}
 }
-
+/* responsive END */
