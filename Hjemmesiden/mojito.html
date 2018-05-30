@@ -44,7 +44,7 @@
 	<!-- header -->
 	<header>
 		<div class="container-fluid">
-			<img src="images/cocktail-09-edited.jpg" class="img-fluid cocktails-header" alt="Responsive image">
+			<img src="images/header.edited.low1.jpg" class="img-fluid" alt="Responsive image">
 		</div>
 	</header>
 	<!-- header end -->
@@ -55,16 +55,19 @@
 		<div class="top1 container-fluid justify-content-sm-center">
 			<!-- first row -->
 			<div class="row cocktails-page justify-content-center">
-				<div class="col-sm-4">
-					<img src="images/mojito.png" alt="..." class="img-thumbnail">
+				<div class="col-sm-3">
+					<img src="images/mojito1.png" alt="..." class="drink-main">
     			</div>
-				<div class="col-sm-4 h5drinks">
+				<div class="col-sm-3">
 					<h5>Ingredienser & Udstyr</h5>
 					<p>Du får brug for: <br>Rom, sukker, lime, mynteblade, dansk vand og is</p><br>
 					<p>Du får brug for: <br>Shaker, barmål, morter, kniv, bræt, vandglas og sugerør</p><br>
-					<h5>Fun Fact</h5>
-					<p>Efter sigende blev Mojito opfundet på Cuba, men det siges også at være en variant på mynte-juleppen, som amerikanere fra sydstaterne holdt meget af.<br><br>Da de flygtede fra forbudstiden, bestilte de mynte-juleppen i Havanna, men fik så den kendte Mojito variant i stedet for. </p>
+					
     			</div>
+				<div class="col-sm-7">
+					<h5 class="h5drinks">Fun Fact</h5>
+					<p>Efter sigende blev Mojito opfundet på Cuba, men det siges også at være en variant på mynte-juleppen, som amerikanere fra sydstaterne holdt meget af.<br><br>Da de flygtede fra forbudstiden, bestilte de mynte-juleppen i Havanna, men fik så den kendte Mojito variant i stedet for. </p>
+				</div>
 			</div>
 			<!-- first row END -->
 			<!-- instruction video -->
@@ -72,9 +75,7 @@
 				<div class="col-sm-6">
 					<h4 class="col-sm h4tips">Instruktions Video</h4>
 					<div class="embed-responsive embed-responsive-16by9">
-						<video class="embed-responsive-item videotips" controls poster="images/Slide-3-NYC-Cocktial-Bar-Crawl-Angels-Share-Employees-Only-Flatiron-Pego-Club-Death-and-Co-Attaboy.jpg"> 
-							<source src="video/cocktail.mp4" type="video/mp4">
-						</video>
+  						<iframe class="embed-responsive-item" controls poster="images/bartender.png" src="https://www.youtube.com/embed/AxIqvDuatGw?rel=1" allowfullscreen></iframe>
 					</div>
     			</div>
 			</div>
@@ -82,15 +83,11 @@
 			<!-- content instructions row -->
 				<div class="row cocktails-page background justify-content-center">
 				<h4 class="col-sm-12 h4tips">Instruktioner</h4>	
-					<div class="col-sm-4 h5drinks ">
-						<p>1 barske sukker, saft fra 1/2 lime og nogle mynteblade kommes i et vandglas.<br><br>2-3 tynde skiver af lime puttes i glasset.<br><br>Indholdet i glasset stødes med morteren. Fyld op med knust is og 6 cl hvid rom.<br><br> Rør rundt og pep den op med et skvæt dansk vand og pynt med 1 kvist mynte.</p>
+					<div class="col-sm-4">
+						<br><br><p>1 barske sukker, saft fra 1/2 lime og nogle mynteblade kommes i et vandglas.<br><br>2-3 tynde skiver af lime puttes i glasset.<br><br>Indholdet i glasset stødes med morteren. Fyld op med knust is og 6 cl hvid rom.<br><br> Rør rundt og pep den op med et skvæt dansk vand og pynt med 1 kvist mynte.</p>
     				</div>
 					<div class="col-sm-3 h5drinks">
-						<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:300px; height:300px">
-							<canvas id="canvas" width="300" height="300" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-							<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:300px; height:300px; position: absolute; left: 0px; top: 0px; display: block;">
-							</div>
-						</div>
+						<img src="images/mojito3.gif" alt="..." class="gif">
     				</div>
 				</div>
 			<!-- content instructions row END -->
@@ -99,19 +96,17 @@
 				<div class="row cocktails-page justify-content-center"> 
 					<div class="col-sm-12">
 						<h4 class="col-sm h4tips">Lærte du opskriften på Mojito?</h4>
-						<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br> Prøv og se om du kan lave den perfekte Mojito, ved at trække ingredienserne over i glasset.</p>
+						<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br><br>Ved at prøve noget i praksis, husker man det tit meget bedre.<br><br>Prøv og se om du kan lave den perfekte Mojito, ved at trække ingredienserne over i glasset.</p>
     				</div>
 				</div>
+			<div class="container-fluid">
 				<div class="row justify-content-center"> 
 					<!-- Alt indhold er wrappet ind i en div med id="content". Alle draggable enheder kan kun trækkes rundt inden for dette felt -->
 					<div id="content">
-			
 						<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
 						<div id="glas"><img id="stepByStep" src="images/glas3.png" width="175" height="301" alt=""/></div>
-		
 						<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
 	  					<div id="ingredienser">
-			
 							<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
 							<div id="centerwrapper">
 								<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
@@ -122,12 +117,11 @@
 		  						<div id="lime"><img src="images/limes@900x.png" width="130" height="auto" alt="lime"/></div>
 								<div id="danskvand"><img src="images/danskvand.png" width="100" height="auto" alt=""/></div>
 								<div id="morter"><img src="images/morter.png" width="70" height="auto" alt=""/></div>
-		  		
 							</div>
 						</div>
-			
 					</div>
 				</div>
+			</div>
 			<!-- content interactive row END -->
 		</div>
 		<!-- content END -->

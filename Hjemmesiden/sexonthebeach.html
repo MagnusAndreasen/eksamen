@@ -45,7 +45,7 @@
 	<!-- header -->
 	<header>
 		<div class="container-fluid">
-			<img src="images/header.edited.low1.jpg" class="img-fluid cocktails-header" alt="Responsive image">
+			<img src="images/header.edited.low1.jpg" class="img-fluid" alt="Responsive image">
 		</div>
 	</header>
 	<!-- header end -->
@@ -54,24 +54,26 @@
 		<div class="top1 container-fluid justify-content-sm-center">
 			<!-- first row -->
 			<div class="row cocktails-page justify-content-center">
-				<div class="col-sm-4">
-					<img src="images/sexonthebeach1.png" alt="..." class="img-thumbnail">
+				<div class="col-sm-3">
+					<img src="images/sexonthebeach1.png" alt="..." class="drink-main">
     			</div>
-				<div class="col-sm-4 h5drinks">
+				<div class="col-sm-3">
 					<h5>Ingredienser & Udstyr</h5>
 					<p>Du får brug for: <br>Vodka, Fersken likør, appelsin juice, tranebærsaft og is</p><br>
 					<p>Du får brug for: <br>Barmål, highball-glas og sugerør</p><br>
-					<h5>Fun Fact</h5>
-					<p>Hvad der kom først, drinken eller navnet, er vel ikke nogen hemmelighed.<br><br> Men om den er opkaldt efter sommerhittet fra pop gruppen T-Spoon eller efter den fritidsbeskæftigelse, som er ulovlig i mange lande, forbliver et åbent spørgsmål.</p>
     			</div>
+				<div class="col-sm-7">
+					<h5 class="h5drinks">Fun Fact</h5>
+					<p>Hvad der kom først, drinken eller navnet, er vel ikke nogen hemmelighed. Men om den er opkaldt efter sommerhittet fra pop gruppen T-Spoon eller efter den fritidsbeskæftigelse, som er ulovlig i mange lande, forbliver et åbent spørgsmål.</p>
+				</div>
 			</div>
 			<!-- first row END -->
 			<!-- instruction video -->
-			<div class="row cocktails-page justify-content-center">
+			<div class="row justify-content-center">
 				<div class="col-sm-6">
 					<h4 class="col-sm h4tips">Instruktions Video</h4>
 					<div class="embed-responsive embed-responsive-16by9">
-  						<iframe class="embed-responsive-item" controls poster="images/Slide-3-NYC-Cocktial-Bar-Crawl-Angels-Share-Employees-Only-Flatiron-Pego-Club-Death-and-Co-Attaboy.jpg" src="https://www.youtube.com/embed/RrNTxVzaozY?rel=1" allowfullscreen></iframe>
+  						<iframe class="embed-responsive-item" controls poster="images/bartender.png" src="https://www.youtube.com/embed/RrNTxVzaozY?rel=1" allowfullscreen></iframe>
 					</div>
     			</div>
 			</div>
@@ -79,11 +81,11 @@
 			<!-- content instructions row -->
 				<div class="row cocktails-page background justify-content-center">
 				<h4 class="col-sm-12 h4tips">Instruktioner</h4>	
-					<div class="col-sm-4 h5drinks">
-						<p>Fyld is i glasset.<br><br> Så hældes 4 cl vodka, 2 cl fersken likør, 4 cl appelsin juice i glasset og røres rundt.<br><br> 4 cl tranebærsaft hældes ved, og der pyntes evt. med frugt.</p>
+					<div class="col-sm-4">
+						<br><br><p>Fyld is i glasset.<br><br> Så hældes 4 cl vodka, 2 cl fersken likør, 4 cl appelsin juice i glasset og røres rundt.<br><br> 4 cl tranebærsaft hældes ved, og der pyntes evt. med frugt.</p>
     				</div>
 					<div class="col-sm-3 h5drinks">
-						<img src="images/sexonthebeach3.gif" alt="..." class="img-thumbnail">
+						<img src="images/sexonthebeach3.gif" alt="..." class="gif">
     				</div>
 				</div>
 			<!-- content instructions row END -->
@@ -92,23 +94,19 @@
 				<div class="row cocktails-page justify-content-center"> 
 					<div class="col-sm-12">
 						<h4 class="col-sm h4tips">Lærte du opskriften på Sex On The Beach?</h4>
-						<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br> Prøv og se om du kan lave den perfekte Sex On The Beach, ved at trække ingredienserne over i glasset.</p><br><br>
-						<p class="interactive">Ved at prøve noget i praksis, husker man det tit meget bedre. Prøv!</p>
+						<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br><br>Ved at prøve noget i praksis, husker man det tit meget bedre.<br><br>Prøv og se om du kan lave den perfekte Sex On The Beach, ved at trække ingredienserne over i glasset.</p>
     				</div>
 				</div>
+			<div class="container-fluid">
 				<div class="row justify-content-center">
 					<!-- Alt indhold er wrappet ind i en div med id="content". Alle draggable enheder kan kun trækkes rundt inden for dette felt -->
 					<div id="content">
-					
-							<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
+						<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
 						<div id="glas"><img id="stepByStep" src="images/glas3.png" width="175" height="301" alt=""/></div>
-				
-								<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
+						<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
 	  					<div id="ingredienser">
-					
-								<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
+							<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
 							<div id="centerwrapper">
-							
 								<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
 								<div id="traneb"><img src="images/tranebær.png" width="76" height="auto" alt=""/></div>
 								<div id="fersken"><img src="images/fersken.png" width="76" height="auto" alt=""/></div>
@@ -118,9 +116,8 @@
 							</div>
 						</div>
 					</div>
-					
-					
 				</div>
+			</div>
 			<!-- content interactive row END -->
 		</div>
 		<!-- content END -->
