@@ -307,8 +307,19 @@ footer {
 /* footer END */
 
 /* responsive */
-
 @media (max-width: 767px) { /* On small screens, remove header */
+ 
+	
+	.drink {
+		text-align: center;
+	}
+	
+	h5 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px) { /* On small screens, remove header */
 	header {
         display: none;
     } 
