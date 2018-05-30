@@ -37,3 +37,13 @@
 	display: inline;
 	/*border: 1px solid blue;*/
 }
+
+/* cursor ændring */
+#centerwrapper div:hover {
+	cursor: -webkit-grab; cursor: grab;
+}
+
+/* cursor ændring */
+#centerwrapper div.ui-draggable-dragging {
+	cursor: -webkit-grabbing; cursor: grabbing;
+}
