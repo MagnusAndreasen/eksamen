@@ -1,8 +1,5 @@
 // JavaScript Document
 
-
-
-
 // TO TOP BUTTON
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -30,9 +27,6 @@ $(function () {
     // validator files are included in the download package
     // otherwise download from http://1000hz.github.io/bootstrap-validator
 
-    $('#contact-form').validator();
-
-
-    
+    $('#contact-form').validator();    
 });
 // CONTACT FORM END
