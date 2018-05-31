@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cocktail Guide</title>
+	
+	
+<!-- Bootstrap CSS -->	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<!-- Bootstrap CSS END -->	
+
+<link rel="stylesheet" href="styles.css" type="text/css">	
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+
+	
+</head>
+
+<body>
+	<!-- navigation -->
+	<div class="container">
+		<nav class="navbar flex-column flex-sm-row">
+			<a class="navbar-brand" href="index.html">
+			   	<img src="images/logo.final.png" width="100" height="40" alt="">
+			</a>
+			<ul class="nav justify-content-end flex-column flex-sm-row">
+			  	<li class="nav-item">
+			   		<a class="nav-link" href="index.html">Hjem</a>
+			  	</li>
+			  	<li class="nav-item">
+			   		<a class="nav-link" href="cocktails.html">Cocktails</a>
+			  	</li>
+			  	<li class="nav-item">
+			   		<a class="nav-link" href="tipsntricks.html">Tips & Tricks</a>
+			  	</li>
+			  	<li class="nav-item">
+			   		<a class="nav-link active" href="about.html">Om Os</a>
+			  	</li>
+			</ul>
+		</nav>
+	</div>
+	<!-- navigation end -->
+	<!-- header -->
+	<header>
+		<div class="container-fluid">
+			<img src="images/logo.final.png" class="img-fluid cocktails-header-logo" alt="Responsive image">
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- content -->
+	<h2>Om os</h2>
+	<div class="top1 container justify-content-sm-center">
+		<!-- content top -->
+		<div class="row cocktails-page-about">
+			<div class="col-sm-6">
+				<p class="col-sm about">
+				Cocktail Guide bestræber sig efter at lære dig cocktail opskrifter på en let og sjov måde. Du bestemmer helt selv om du bare skal se hvad der i drinken og køre den solo der fra eller om du bruger nogle af de redskaber vi har tilgængelige.
+				</p>
+    		</div>
+			<div class="col-sm-6">
+				<p class="col-sm about">
+				Har du forslag til nye opskrifter eller bare har et eller andet på hjerte, så skriv til os via kontakt boksen nedenfor. Vi vender tilbage så hurtigt vi kan, og senest 24 timer efter modtagelse af mailen.
+				</p>
+    		</div>
+		</div>
+		<!-- content top END -->
+			
+		<!-- content bottom -->
+		<div class="container">
+           	<div class="row">
+               	<div class="col-sm-12">
+                   	<h2>Kontakt os</h2>
+                   	<p class="col-sm about-contact">Send os en besked ved at udfylde felterne nedenfor.</p>
+                   	<form id="contact-form" method="post" action="contact.php" >
+						<div class="messages"></div>
+    					<div class="controls">
+       						<div class="row">
+           						<div class="col-sm-6">
+           						    <div class="form-group">
+           						        <label for="form_name">Fornavn *</label>
+           						        <input id="form_name" type="text" name="name" class="form-control" placeholder="Venligst indtast dit fornavn her *" required="required" data-error="Firstname is required.">
+           						        <div class="help-block with-errors"></div>
+           						    </div>
+           						</div>
+           						<div class="col-sm-6">
+           						    <div class="form-group">
+           						        <label for="form_lastname">Efternavn *</label>
+           						        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Venligst indtast dit efternavn her *" required="required" data-error="Lastname is required.">
+           						        <div class="help-block with-errors"></div>
+           						    </div>
+           						</div>
+       						</div>
+       						<div class="row">
+       						    <div class="col-sm-6">
+       						        <div class="form-group">
+       						            <label for="form_email">Email *</label>
+       						            <input id="form_email" type="email" name="email" class="form-control" placeholder="Venligst indtast din email her *" required="required" data-error="Valid email is required.">
+       						            <div class="help-block with-errors"></div>
+       						        </div>
+       						    </div>
+       						    <div class="col-sm-6">
+       						        <div class="form-group">
+       						            <label for="form_phone">Telefon nummer</label>
+       						            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Venligst indtast dit telefon nummer her">
+       						            <div class="help-block with-errors"></div>
+       						        </div>
+       						    </div>
+       						</div>
+       						<div class="row">
+       						    <div class="col-sm-12">
+       						        <div class="form-group">
+       						            <label for="form_message">Besked *</label>
+       						            <textarea id="form_message" name="message" class="form-control" placeholder="Venligst indtast din besked her *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+       						            <div class="help-block with-errors"></div>
+       						        </div>
+       						    </div>
+								<div class="col-sm-12">
+               						<input type="submit" class="btn btn-success btn-send" value="Send besked">
+           						</div>
+       						</div>
+       						<div class="row">
+           						<div class="col-md-12">
+               						<p class="text-muted"><strong>*</strong> Disse felter er påkrævede.</p>
+           						</div>
+       						</div>
+    					</div>
+					</form>
+				</div>
+           	</div>
+       	</div>
+		<!-- content bottom END -->
+	</div>
+	<!-- content END -->
+	
+	<!-- to top button -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<!-- to top button end -->
+	
+	<!-- footer -->
+	<footer>
+  		<div class="container-fluid">
+			<div class="row justify-content-sm-center">
+    			<div class="col-sm-auto">
+    				<p class="footer">Cocktail Guide - Copyright © 2018 - Website developed by SMS</p>
+    			</div>
+  			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	
+	<!-- scripts -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS END -->
+	
+	<script src="validator.js"></script>
+    <script src="contact.js"></script>
+	
+	<!-- custom scripts -->
+	<script src="scripts.js"></script>
+	<!-- custom scripts end -->
+	
+	<!-- scripts end -->
+	
+</body>
+</html>
