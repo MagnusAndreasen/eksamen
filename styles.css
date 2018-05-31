@@ -249,6 +249,14 @@ label {
 	border-radius: 0px;
 }
 
+.btn:active {
+	background-color: #E7491C;
+	color: white;
+	box-shadow: 0 3px #666;
+	transform: translateY(2px)
+	
+}
+
 #form_name, #form_lastname, #form_email, #form_phone, #form_message {
 	font-family: "Raleway"; 
 }
