@@ -30,6 +30,7 @@ p { /* Text color og font */
 	border-radius: 0px; /* Rounded corners */
 	height: inherit;
 }
+
 /* Main END */
 
 /* navigation */
@@ -99,7 +100,6 @@ header {
 	margin-left: none;
 	margin-right: none;
 	padding: none;
-	
 	display: block;
 }
 
@@ -118,7 +118,7 @@ header {
 /* headers END */
 
 /* content top */
-h2, h4 {
+h2, h4, .overskrift {
 	text-align: center;
 	color: #E7491C;
 }
