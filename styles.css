@@ -31,6 +31,10 @@ p { /* Text color og font */
 	height: inherit;
 }
 
+.overskrift-drinks {
+	margin-top: 50px;
+}
+
 /* Main END */
 
 /* navigation */
