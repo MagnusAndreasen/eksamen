@@ -1,0 +1,230 @@
+/* Selve området hele funktionen befinder sig inden for.*/
+#content {
+	margin: 0px auto;
+	width: 70%;
+	border: 1px solid #e7491c;
+}
+
+/* Containeren for hvor elementer bliver droppet med processbilleder af glasset*/
+#glas {
+	width: 10%;
+	margin: 0px auto;
+	/*border: 1px solid blue;*/
+	padding: 30px;
+}
+
+#glas img {
+	width: 100%;
+	height: 100%;
+	max-width: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Containeren for det felt ingredienserne befinder sig i inden og efter de er blevet dragget */
+#ingredienser {
+	width: 100%;
+	margin: 0px auto;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+
+/* En contentwrapper der er pakket uden om ingredienserne for at få dem til at være i midten af containeren*/
+#centerwrapper {
+	margin: 0px auto;
+	width: 100%;
+	/*border: 1px solid blue;*/
+}
+
+/* De draggable elementer der indeholder billeder af den pågældende ingrediens */
+/*#centerwrapper div {
+	width: 100px;
+	margin: 0px 10px;
+	display: inline;
+	border: 1px solid blue;
+} 
+*/
+
+.ingredient {
+	width: 10%;
+	/*border: 1px solid black;*/
+	margin: 0px 10px;
+	display: inline-block;
+}
+
+.ingredient img {
+	width: 50%;
+	height: 50%;
+	
+}
+
+/* Cursor ændrer sig til grab når man har musen over en ingrediens */
+#centerwrapper div:hover {
+	cursor: -webkit-grab; cursor: grab;
+}
+/* Cursor ændrer sig til gabbing når man trækker elementet */
+#centerwrapper div.ui-draggable-dragging {
+	cursor: -webkit-grabbing; cursor: grabbing;
+}
+
+#rom img {
+	width: 70%;
+	height: 70%;
+}
+
+#mynte img {
+	width: 70%;
+	height: 70%;
+}
+
+#is img {
+	width: 60%;
+	height: 60%;
+}
+#sukker {
+	padding: 10px;
+}
+
+#sukker img {
+	width: 30%;
+	height: 30%;
+}
+
+#lime img {
+	width: 70%;
+	height: 70%;
+}
+
+#danskvand img {
+	width: 70%;
+	height: 70%;
+}
+
+#morter img {
+	width: 30%;
+	height: 30%;
+}
+
+
+
+
+/*Mobile version */
+
+/* Selve området hele funktionen befinder sig inden for.*/
+#contentmb {
+	margin: 0px auto;
+	width: 70%;
+	border: 1px solid #e7491c;
+	display: none;
+}
+
+/* Containeren for hvor elementer bliver droppet med processbilleder af glasset*/
+#glasmb {
+	width: 10%;
+	margin: 0px auto;
+	/*border: 1px solid blue;*/
+}
+
+#glasmb img {
+	width: 100%;
+	height: 100%;
+	max-width: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Containeren for det felt ingredienserne befinder sig i inden og efter de er blevet dragget */
+#ingrediensermb {
+	width: 100%;
+	margin: 0px auto;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+
+/* En contentwrapper der er pakket uden om ingredienserne for at få dem til at være i midten af containeren*/
+#centerwrappermb {
+	margin: 0px auto;
+	width: 100%;
+	border: 1px solid blue;*/
+}
+
+/* De draggable elementer der indeholder billeder af den pågældende ingrediens */
+/*#centerwrapper div {
+	width: 100px;
+	margin: 0px 10px;
+	display: inline;
+	border: 1px solid blue;
+} 
+*/
+
+.ingredientmb {
+	width: 10%;
+	/*border: 1px solid black;*/
+	margin: 0px 5px;
+	display: inline-block;
+}
+
+#rommb img {
+	width: 70%;
+	height: 70%;
+}
+
+#myntemb img {
+	width: 70%;
+	height: 70%;
+}
+
+#ismb img {
+	width: 60%;
+	height: 60%;
+}
+#sukkermb {
+	padding: 10px;
+}
+
+#sukkermb img {
+	width: 30%;
+	height: 30%;
+}
+
+#limemb img {
+	width: 70%;
+	height: 70%;
+}
+
+#danskvandmb img {
+	width: 70%;
+	height: 70%;
+}
+
+#mortermb img {
+	width: 30%;
+	height: 30%;
+}
+
+
+
+/* Cursor ændrer sig til grab når man har musen over en ingrediens */
+#centerwrappermb div:hover {
+	cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 864px){
+	#contentmb {
+	width: 100%;
+	}
+}
+
+@media screen and (max-width: 479px){
+	#content {
+		display: none;
+	}
+	#contentmb {
+		display: block;
+	}
+}

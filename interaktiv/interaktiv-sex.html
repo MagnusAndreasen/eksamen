@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sex on the Beach</title>
+		<link rel="stylesheet" type="text/css" href="stylesex.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="scriptsex.js"></script>
+		<script type="text/javascript" src="mobilesex.js"></script>
+		
+	</head>
+	
+	<body>
+	<!-- Alt indhold er wrappet ind i en div med id="content". Alle draggable enheder kan kun trækkes rundt inden for dette felt -->
+		<div id="content">
+			<button type="button" id="knap" onClick="restart()">Restart</button>
+			<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
+			<div id="glas"><img id="stepByStep" src="billeder/glas.png" width="175" height="301" alt=""/></div>
+			<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
+	  		<div id="ingredienser">
+				<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
+				<div id="centerwrapper">
+					<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
+					<div id="traneb" class="ingredient"><img src="billeder/tranebær.png" width="76" height="auto" alt=""/></div>
+					<div id="fersken" class="ingredient"><img src="billeder/fersken.png" width="76" height="auto" alt=""/></div>
+					<div id="is" class="ingredient"><img src="billeder/icecubes@900x.png" width="100" height="auto" alt=""/></div>				
+					<div id="appelsin" class="ingredient"><img src="billeder/appelsinjuice.png" width="76" height="auto" alt=""/></div>		  		
+					<div id="vodka" class="ingredient"><img src="billeder/vodka.png" width="76" height="271" alt=""/></div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id="contentmb">
+			<button type="button" id="knapmb" onClick="restartmb()">Restart</button>
+			<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
+			<div id="glasmb"><img id="stepByStepmb" src="billeder/glas.png" width="175" height="301" alt=""/></div>
+		
+			<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
+	  		<div id="ingrediensermb">
+			
+				<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
+				<div id="centerwrappermb">
+				
+					<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
+					<div id="tranebmb" class="ingredientmb"><img src="billeder/tranebær.png" width="76" height="auto" alt=""/></div>
+					<div id="ferskenmb" class="ingredientmb"><img src="billeder/fersken.png" width="76" height="auto" alt=""/></div>
+					<div id="ismb" class="ingredientmb"><img src="billeder/icecubes@900x.png" width="100" height="auto" alt=""/></div>				
+					<div id="appelsinmb" class="ingredientmb"><img src="billeder/appelsinjuice.png" width="76" height="auto" alt=""/></div>		  		
+					<div id="vodkamb" class="ingredientmb"><img src="billeder/vodka.png" width="76" height="271" alt=""/></div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+	
+	</body>
+</html>
