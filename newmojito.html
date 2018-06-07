@@ -39,24 +39,29 @@ $( function() {
 <body onload="init();">
 	<!-- navigation -->
 	<div class="container">
-		<nav class="navbar flex-column flex-sm-row">
+		<nav class="navbar flex-column flex-sm-row navbar-expand-md">
 			<a class="navbar-brand" href="index.html">
 			   	<img src="images/logo.final.png" width="100" height="40" alt="Cocktail Guide - Learn To Make Cocktails">
 			</a>
-			<ul class="nav justify-content-end flex-column flex-sm-row">
-			  	<li class="nav-item">
-			   		<a class="nav-link" href="index.html">Hjem</a>
-			  	</li>
-			  	<li class="nav-item">
-			   		<a class="nav-link active" href="cocktails.html">Cocktails</a>
-			  	</li>
-			  	<li class="nav-item">
-			   		<a class="nav-link" href="tipsntricks.html">Tips & Tricks</a>
-			  	</li>
-			  	<li class="nav-item">
-			   		<a class="nav-link" href="about.html">Om Os</a>
-			  	</li>
-			</ul>
+			<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  				<span class="navbar-toggler-icon"></span>
+  			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+				<ul class="nav navbar-nav">
+				  	<li class="nav-item">
+				   		<a class="nav-link" href="index.html">Hjem</a>
+				  	</li>
+				  	<li class="nav-item">
+				   		<a class="nav-link active" href="cocktails.html">Cocktails</a>
+				  	</li>
+				  	<li class="nav-item">
+				   		<a class="nav-link" href="tipsntricks.html">Tips & Tricks</a>
+				  	</li>
+				  	<li class="nav-item">
+				   		<a class="nav-link" href="about.html">Om Os</a>
+				  	</li>
+				</ul>
+			</div>
 		</nav>
 	</div>
 	<!-- navigation end -->
@@ -154,6 +159,16 @@ $( function() {
 					</div>
 				</div>
   			</div>
+		</div>
+	</div>
+	<div class="top1 container-fluid justify-content-sm-center">
+		<!-- den gamle version -->
+		<div class="row justify-content-center">
+			<div class="col-sm-5">
+				<h5 class="h5drinks">Den gamle version</h5>
+				<p class="oldlinktext">Tryk på knappen nedenfor, for at se den gamle version af denne side.<br><br>Efter afleveringen af projektet, er der blevet lavet nye opdateringer, som er dem du kan se ovenover.</p>
+				<a href="mojito.html" class="btn btn-link btn-lg btn-block" role="button" target="_blank">Link</a>
+			</div>
 		</div>
 	</div>
 	<!-- content END -->
