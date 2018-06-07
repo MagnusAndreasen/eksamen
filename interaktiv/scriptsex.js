@@ -41,19 +41,19 @@ function billedeSkift(event, ui) {
 	if(checkRecipe(glass, recipe)) {
 		if (draggedIngredient == 'is') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasis.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glasis.png";
 		} else if(draggedIngredient == 'vodka') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glaseftervodka.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glaseftervodka.png";
 		} else if(draggedIngredient == 'fersken') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasefterfersken.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glasefterfersken.png";
 		} else if(draggedIngredient == 'appelsin') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasefterjuice.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glasefterjuice.png";
 		} else if(draggedIngredient == 'traneb') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glasdone.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glasdone.png";
 		} 
 	//Hvis ikke den har det korrekte id vil den blive trukket fra glasset og ryge tilbage på sin plads
 	} else if(glass.length > 0) {
@@ -77,7 +77,7 @@ function checkRecipe(glass, recipe) {
 
 function restart (){
 	//var button = document.getElementById("knap");
-	document.getElementById("stepByStep").src = "billeder/glas.png";
+	document.getElementById("stepByStep").src = "interaktiv/billeder/glas.png";
 	$(".ingredient").draggable('enable');
 	glass = [];
 	//glass.splice(glass.length - 1, 1);

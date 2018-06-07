@@ -25,19 +25,19 @@ var glassmb = [];
 		 
 		 if (checkRecipemb(glassmb, recipemb)) {
 			 if (clickedIngredient == 'sukkermb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glas1.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glas1.png";
 			 } else if (clickedIngredient == 'limemb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glas2.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glas2.png";
 			 } else if (clickedIngredient == 'myntemb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glas3.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glas3.png";
 			 } else if (clickedIngredient == 'mortermb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glas4.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glas4.png";
 			 } else if (clickedIngredient == 'ismb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glas5.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glas5.png";
 			 } else if (clickedIngredient == 'rommb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glas6.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glas6.png";
 			 }	else if (clickedIngredient == 'danskvandmb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glas7.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glas7.png";
 			 }
 		} else if (glassmb.length > 0) {
 			glassmb.splice(glassmb.length -1, 1);
@@ -63,6 +63,6 @@ function checkRecipemb(glassmb, recipemb) {
 }
 
 function restartmb (){
-	document.getElementById("stepByStepmb").src = "billeder/glas.png";
+	document.getElementById("stepByStepmb").src = "interaktiv/billeder/glas.png";
 	glassmb = [];	
 }

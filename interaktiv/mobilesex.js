@@ -23,15 +23,15 @@ var glassmb = [];
 		 
 		 if (checkRecipemb(glassmb, recipemb)) {
 			 if (clickedIngredient == 'ismb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glasis.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glasis.png";
 			 } else if (clickedIngredient == 'vodkamb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glaseftervodka.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glaseftervodka.png";
 			 } else if (clickedIngredient == 'ferskenmb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glasefterfersken.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glasefterfersken.png";
 			 } else if (clickedIngredient == 'appelsinmb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glasefterjuice.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glasefterjuice.png";
 			 } else if (clickedIngredient == 'tranebmb') {
-				 document.getElementById('stepByStepmb').src = "billeder/glasdone.png";
+				 document.getElementById('stepByStepmb').src = "interaktiv/billeder/glasdone.png";
 			 }	
 		} else if (glassmb.length > 0) {
 			glassmb.splice(glassmb.length -1, 1);
@@ -57,6 +57,6 @@ function checkRecipemb(glassmb, recipemb) {
 }
 
 function restartmb (){
-	document.getElementById("stepByStepmb").src = "billeder/glas.png";
+	document.getElementById("stepByStepmb").src = "interaktiv/billeder/glas.png";
 	glassmb = [];	
 }

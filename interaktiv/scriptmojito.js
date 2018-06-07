@@ -43,25 +43,25 @@ function billedeSkift(event, ui) {
 	if(checkRecipe(glass, recipe)) {
 		if (draggedIngredient == 'sukker') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glas1.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glas1.png";
 		} else if(draggedIngredient == 'lime') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glas2.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glas2.png";
 		} else if(draggedIngredient == 'mynte') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glas3.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glas3.png";
 		} else if(draggedIngredient == 'morter') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glas4.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glas4.png";
 		} else if(draggedIngredient == 'is') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glas5.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glas5.png";
 		} else if(draggedIngredient == 'rom') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glas6.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glas6.png";
 		} else if(draggedIngredient == 'danskvand') {
 			ui.draggable.draggable('disable');
-			document.getElementById("stepByStep").src = "billeder/glas7.png";
+			document.getElementById("stepByStep").src = "interaktiv/billeder/glas7.png";
 		}
 	//Hvis ikke den har det korrekte id vil den blive trukket fra glasset og ryge tilbage på sin plads
 	} else if(glass.length > 0) {
@@ -85,7 +85,7 @@ function checkRecipe(glass, recipe) {
 
 function restart (){
 	//var button = document.getElementById("knap");
-	document.getElementById("stepByStep").src = "billeder/glas.png";
+	document.getElementById("stepByStep").src = "interaktiv/billeder/glas.png";
 	$(".ingredient").draggable('enable');
 	glass = [];
 	//glass.splice(glass.length - 1, 1);

@@ -13,7 +13,7 @@
 <!-- Bootstrap CSS END -->	
 
 <link rel="stylesheet" href="styles.css" type="text/css">
-<link rel="stylesheet" href="stylesex.css" type="text/css">
+<link rel="stylesheet" href="interaktiv/stylesex.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 	
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -88,7 +88,7 @@ $( function() {
 					<br><br><p>Fyld is i glasset.<br><br> Så hældes 4 cl vodka, 2 cl fersken likør, 4 cl appelsin juice i glasset og røres rundt.<br><br> 4 cl tranebærsaft hældes ved, og der pyntes evt. med frugt.</p>
     			</div>
 				<div class="col-sm-4 h5drinks">
-					<img src="images/recover-sexonthebeach.gif" alt="Cocktail Guide - Sex on the beach step by step" class="gif">
+					<img src="images/sexonthebeach123.gif" alt="Cocktail Guide - Sex on the beach step by step" class="gif">
     			</div>
 			</div>
 			<h3 class="ui-accordion-header ui-accordion-header-active ui-state-active ui-state-default">Instruktions Video</h3>
@@ -112,18 +112,36 @@ $( function() {
 					<div class="row">
 						<!-- Alt indhold er wrappet ind i en div med id="content". Alle draggable enheder kan kun trækkes rundt inden for dette felt -->
 						<div id="content">
+							<button type="button" id="knap" onClick="restart()">Restart</button>
 							<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
-							<div id="glas"><img id="stepByStep" src="images/glas3.png" width="175" height="301" alt="Cocktail Guide - Glas"/></div>
+							<div id="glas"><img id="stepByStep" src="interaktiv/billeder/glas.png" width="175" height="301" alt=""/></div>
 							<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
 	  						<div id="ingredienser">
 								<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
 								<div id="centerwrapper">
 									<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
-									<div id="traneb"><img src="images/tranebær.png" width="76" alt="Cocktail Guide - Tranebær"/></div>
-									<div id="fersken"><img src="images/fersken.png" width="76" alt="Cocktail Guide - Fersken likør"/></div>
-									<div id="is"><img src="images/icecubes@900x.png" width="100" alt="Cocktail Guide - Isterninger"/></div>				
-									<div id="appelsin"><img src="images/appelsinjuice.png" width="76" alt="Cocktail Guide - Appelsin juice"/></div>		  		
-									<div id="vodka"><img src="images/vodka.png" width="76" alt="Cocktail Guide - Vodka"/></div>
+									<div id="traneb" class="ingredient"><img src="interaktiv/billeder/tranebær.png" width="76" height="auto" alt=""/></div>
+									<div id="fersken" class="ingredient"><img src="interaktiv/billeder/fersken.png" width="76" height="auto" alt=""/></div>
+									<div id="is" class="ingredient"><img src="interaktiv/billeder/icecubes@900x.png" width="100" height="auto" alt=""/></div>		
+									<div id="appelsin" class="ingredient"><img src="interaktiv/billeder/appelsinjuice.png" width="76" height="auto" alt=""/></div>
+									<div id="vodka" class="ingredient"><img src="interaktiv/billeder/vodka.png" width="76" height="271" alt=""/></div>
+								</div>
+							</div>
+						</div>
+						<div id="contentmb">
+							<button type="button" id="knapmb" onClick="restartmb()">Restart</button>
+							<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
+							<div id="glasmb"><img id="stepByStepmb" src="interaktiv/billeder/glas.png" width="175" height="301" alt=""/></div>
+							<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
+	  						<div id="ingrediensermb">
+								<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
+								<div id="centerwrappermb">
+									<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
+									<div id="tranebmb" class="ingredientmb"><img src="interaktiv/billeder/tranebær.png" width="76" height="auto" alt=""/></div>
+									<div id="ferskenmb" class="ingredientmb"><img src="interaktiv/billeder/fersken.png" width="76" height="auto" alt=""/></div>
+									<div id="ismb" class="ingredientmb"><img src="interaktiv/billeder/icecubes@900x.png" width="100" height="auto" alt=""/></div>
+									<div id="appelsinmb" class="ingredientmb"><img src="interaktiv/billeder/appelsinjuice.png" width="76" height="auto" alt=""/></div>
+									<div id="vodkamb" class="ingredientmb"><img src="interaktiv/billeder/vodka.png" width="76" height="271" alt=""/></div>
 								</div>
 							</div>
 						</div>
@@ -160,7 +178,8 @@ $( function() {
 	<!-- interactive scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
-	<script src="scriptsex.js"></script>
+	<script src="interaktiv/scriptsex.js"></script>
+	<script type="text/javascript" src="interaktiv/mobilesex.js"></script>
 	<!-- interactive scripts END -->
 	<!-- contact scripts -->
 	<script src="validator.js"></script>
