@@ -31,6 +31,10 @@ p { /* Text color og font */
 	height: inherit;
 }
 
+.overskrift-drinks {
+	margin-top: 50px;
+}
+
 /* Main END */
 
 /* navigation */
@@ -118,7 +122,7 @@ header {
 /* headers END */
 
 /* content top */
-h2, h4, .overskrift {
+h2, h3, h4, .overskrift {
 	text-align: center;
 	color: #E7491C;
 }
@@ -261,6 +265,34 @@ label { /* contact form overskrifter */
 	font-family: "Raleway";
 }
 /* contact form END */
+
+/* Accordion */
+.ui-accordion {
+	margin-bottom: 50px;
+}
+
+.ui-accordion-header {
+	font-family: "Aloha";
+	border-radius: 0px !important;
+	border: none !important;
+	color: #1E1E1E !important;
+}
+
+.ui-accordion-header-active {
+	color: white;
+	border: none;
+}
+
+.ui-state-active {
+	background-color: #E7491C !important;
+	border: none;
+}
+
+.ui-state-default {
+	background-color: #f1edd4 !important;
+	border: none;
+}
+/* Accordion END */
 
 /* to top button */
 #myBtn {

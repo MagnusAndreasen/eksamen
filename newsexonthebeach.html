@@ -7,7 +7,7 @@
 	
 <meta name="Description" content="Learn how to make a Sex On The Beach cocktail. See the ingredients and equipment you need. Learn by text, video, animation or interactive learning. Come an take a look!"/>	
 	
-<link rel="shortcut icon" type="image/png" href="http://magnusmultimedia.dk/eksamen2018/images/favicon.png" alt="Cocktail Guide - Learn To Make Cocktails"/>	
+<link rel="shortcut icon" type="image/png" href="http://magnusmultimedia.dk/eksamen2018/images/favicon.png"/>	
 <!-- Bootstrap CSS -->	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <!-- Bootstrap CSS END -->	
@@ -16,7 +16,21 @@
 <link rel="stylesheet" href="stylesex.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 	
-
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+	$("#accordion").show().accordion({
+        autoHeight: false
+    });
+	$("#accordion div").css({ 'height': 'auto' });
+  } );
+</script>
 	
 </head>
 
@@ -64,57 +78,60 @@
 			</div>
 		</div>
 		<!-- first row END -->
-		<!-- instruction video -->
-		<div class="row justify-content-center">
-			<div class="col-sm-6">
-				<h4 class="col-sm h4tips">Instruktions Video</h4>
-				<div class="embed-responsive embed-responsive-16by9">
-  					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WVTmUPfKnko?rel=1" allowfullscreen></iframe>
+	</div>
+		<!-- accordion -->
+	<div class="container-fluid ui-accordion">
+		<div class="col-sm-12" id="accordion">
+			<h3 class="ui-accordion-header ui-accordion-header-active ui-state-active ui-state-default">Instruktioner</h3>
+  			<div class="row cocktails-page background justify-content-center">
+				<div class="col-sm-4">
+					<br><br><p>Fyld is i glasset.<br><br> Så hældes 4 cl vodka, 2 cl fersken likør, 4 cl appelsin juice i glasset og røres rundt.<br><br> 4 cl tranebærsaft hældes ved, og der pyntes evt. med frugt.</p>
+    			</div>
+				<div class="col-sm-4 h5drinks">
+					<img src="images/recover-sexonthebeach.gif" alt="Cocktail Guide - Sex on the beach step by step" class="gif">
+    			</div>
+			</div>
+			<h3 class="ui-accordion-header ui-accordion-header-active ui-state-active ui-state-default">Instruktions Video</h3>
+  			<div class="row justify-content-center">
+				<div class="col-sm-8">
+					<div class="embed-responsive embed-responsive-16by9">
+  						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WVTmUPfKnko?rel=1" allowfullscreen></iframe>
+					</div>
+    			</div>
+			</div>
+  			
+  			<h3 class="ui-accordion-header ui-accordion-header-active ui-state-active ui-state-default">Interaktivt Cocktail Spil</h3>
+  			<div>
+  				<div class="row justify-content-center"> 
+					<div class="col-sm-8">
+						<h4 class="col-sm">Lærte du opskriften på Sex On The Beach?</h4>
+						<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br><br>Ved at prøve noget i praksis, husker man det tit meget bedre.<br><br>Prøv og se om du kan lave den perfekte Sex On The Beach, ved at trække ingredienserne over i glasset, i den rigtige rækkefølge.</p>
+    				</div>
 				</div>
-    		</div>
-		</div>
-		<!-- instruction video END -->
-		<!-- content instructions row -->
-		<div class="row cocktails-page background justify-content-center">
-		<h4 class="col-sm-12 h4tips">Instruktioner</h4>	
-			<div class="col-sm-4">
-				<br><br><p>Fyld is i glasset.<br><br> Så hældes 4 cl vodka, 2 cl fersken likør, 4 cl appelsin juice i glasset og røres rundt.<br><br> 4 cl tranebærsaft hældes ved, og der pyntes evt. med frugt.</p>
-    		</div>
-			<div class="col-sm-3 h5drinks">
-				<img src="images/sexonthebeach3.gif" alt="Cocktail Guide - Sex on the beach step by step" class="gif">
-    		</div>
-		</div>
-		<!-- content instructions row END -->
-		
-		<!-- content interactive row -->
-		<div class="row cocktails-page justify-content-center"> 
-			<div class="col-sm-12">
-				<h4 class="col-sm h4tips">Lærte du opskriften på Sex On The Beach?</h4>
-				<p class="interactive">Hvis du ikke er helt sikker på opskriften, så prøv lige den interaktive opskrift nedenfor.<br><br>Ved at prøve noget i praksis, husker man det tit meget bedre.<br><br>Prøv og se om du kan lave den perfekte Sex On The Beach, ved at trække ingredienserne over i glasset, i den rigtige rækkefølge.</p>
-    		</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<!-- Alt indhold er wrappet ind i en div med id="content". Alle draggable enheder kan kun trækkes rundt inden for dette felt -->
-				<div id="content">
-					<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
-					<div id="glas"><img id="stepByStep" src="images/glas3.png" width="175" height="301" alt="Cocktail Guide - Glas"/></div>
-					<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
-	  				<div id="ingredienser">
-						<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
-						<div id="centerwrapper">
-							<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
-							<div id="traneb"><img src="images/tranebær.png" width="76" alt="Cocktail Guide - Tranebær"/></div>
-							<div id="fersken"><img src="images/fersken.png" width="76" alt="Cocktail Guide - Fersken likør"/></div>
-							<div id="is"><img src="images/icecubes@900x.png" width="100" alt="Cocktail Guide - Isterninger"/></div>				
-							<div id="appelsin"><img src="images/appelsinjuice.png" width="76" alt="Cocktail Guide - Appelsin juice"/></div>		  		
-							<div id="vodka"><img src="images/vodka.png" width="76" alt="Cocktail Guide - Vodka"/></div>
+				<div class="container-fluid">
+					<div class="row">
+						<!-- Alt indhold er wrappet ind i en div med id="content". Alle draggable enheder kan kun trækkes rundt inden for dette felt -->
+						<div id="content">
+							<!-- Billedet med glasset. Det er her de draggable enheder bliver droppet og billedet skifter løbende under processen -->
+							<div id="glas"><img id="stepByStep" src="images/glas3.png" width="175" height="301" alt="Cocktail Guide - Glas"/></div>
+							<!-- Div'en med id="ingredienser er containteren for alle draggable enheder. Det er her ingredienserne vil blive dragget fra -->
+	  						<div id="ingredienser">
+								<!-- Centerwrapper div'en bruges til at få ingreidenserne til at være samlet i midten af ingrediens containeren -->
+								<div id="centerwrapper">
+									<!-- Følgende div's er de draggable enheder der skal trækkes over i glasset. De indeholder et billede af den repræsenterede ingrediens -->
+									<div id="traneb"><img src="images/tranebær.png" width="76" alt="Cocktail Guide - Tranebær"/></div>
+									<div id="fersken"><img src="images/fersken.png" width="76" alt="Cocktail Guide - Fersken likør"/></div>
+									<div id="is"><img src="images/icecubes@900x.png" width="100" alt="Cocktail Guide - Isterninger"/></div>				
+									<div id="appelsin"><img src="images/appelsinjuice.png" width="76" alt="Cocktail Guide - Appelsin juice"/></div>		  		
+									<div id="vodka"><img src="images/vodka.png" width="76" alt="Cocktail Guide - Vodka"/></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+  			</div>
 		</div>
-		<!-- content interactive row END -->
+		
 	</div>
 	<!-- content END -->
 	
@@ -152,6 +169,8 @@
 	<!-- custom scripts -->
 	<script src="scripts.js"></script>
 	<!-- custom scripts end -->
+	
+	
 	
 	<!-- scripts end -->
 	
