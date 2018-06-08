@@ -147,7 +147,7 @@
 #centerwrappermb {
 	margin: 0px auto;
 	width: 100%;
-	border: 1px solid blue;*/
+	
 }
 
 /* De draggable elementer der indeholder billeder af den pågældende ingrediens */
@@ -185,8 +185,8 @@
 }
 
 #sukkermb img {
-	width: 30%;
-	height: 30%;
+	width: 100%;
+	height: 100%;
 }
 
 #limemb img {

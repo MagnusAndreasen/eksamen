@@ -99,7 +99,7 @@
 #glasmb {
 	width: 10%;
 	margin: 0px auto;
-	border: 1px solid blue;*/
+	
 }
 
 #glasmb img {
@@ -123,7 +123,7 @@
 #centerwrappermb {
 	margin: 0px auto;
 	width: 100%;
-	border: 1px solid blue;*/
+	
 }
 
 /* De draggable elementer der indeholder billeder af den pågældende ingrediens */
@@ -137,7 +137,7 @@
 
 .ingredientmb {
 	width: 10%;
-	border: 1px solid black;
+	
 	margin: 0px 10px;
 	display: inline-block;
 }
